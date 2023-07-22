@@ -6,8 +6,11 @@ const removeMd = require("remove-markdown");
 const MODEL_NAME = "models/text-bison-001";
 const API_KEY: string = process.env.PALM_KEY!;
 
+const auth = new GoogleAuth().fromAPIKey(API_KEY);
+
 const client = new TextServiceClient({
-  authClient: new GoogleAuth().fromAPIKey(API_KEY),
+  // @ts-ignore
+  authClient: auth,
 });
 
 export async function POST(request: Request) {

@@ -68,7 +68,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
-      <h1 className="text-xl font-bold">AI Study Plan Creator</h1>
+      <h1 className="text-xl font-bold">AI Study Planner</h1>
       <h2 className="text-xs text-gray-600  mb-5">
         Create a study plan by using Google PaLM AI
       </h2>
